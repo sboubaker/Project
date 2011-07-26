@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"         template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="title" value="Projet" />
+        <put-attribute name="header" value="/WEB-INF/views/commun/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/commun/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/commun/footer.jsp" />
+    </definition>
+ 
+    <definition name="book-tiles" extends="base.definition">
+        <put-attribute name="title" value="Book Manager" />
+        <put-attribute name="body" value="/WEB-INF/views/book.jsp" />
+    </definition>
+    
+    <definition name="books-tiles" extends="base.definition">
+        <put-attribute name="title" value="Book Manager" />
+        <put-attribute name="body" value="/WEB-INF/views/books.jsp" />
+    </definition>
+ 
+</tiles-definitions>
