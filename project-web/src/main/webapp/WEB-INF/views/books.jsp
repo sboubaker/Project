@@ -7,15 +7,14 @@
 <title>Books</title>
 </head>
 <body>
-	<h1>Our Books</h1>
+	<h3>Our Books</h3>
 	<table>
 		<tbody>
 			<c:forEach var="book" items="${books}">
 				<tr>
-					<td><c:out value="${book.name}" />
-					</td>
-					<td><c:out value="${book.edition}" />
-					</td>
+					<td><c:out value="${book.id}" /></td>
+					<td><c:out value="${book.name}" /></td>
+					<td><c:out value="${book.edition}" /></td>
 				</tr>
 			</c:forEach>
 		</tbody>

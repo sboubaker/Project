@@ -1,1 +1,1 @@
-<h2>The Footer</h2>
+<center>Copyright© sboubaker 2011</center>

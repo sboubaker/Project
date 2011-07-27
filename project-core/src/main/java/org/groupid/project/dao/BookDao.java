@@ -8,9 +8,8 @@ import org.groupid.project.model.Book;
 
 public interface BookDao {
 
-	Book get(Long id);
-	void save(Book user);
-	void delete(Book user);
+	
+	void save(Book book);
 	List<Book> findAll();
 
 }

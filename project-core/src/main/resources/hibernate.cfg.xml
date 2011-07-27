@@ -5,5 +5,6 @@
 <hibernate-configuration>
 	<session-factory>
 	<mapping class="org.groupid.project.model.Book" />
+	<mapping class="org.groupid.project.model.User" />
 	</session-factory>
 </hibernate-configuration>

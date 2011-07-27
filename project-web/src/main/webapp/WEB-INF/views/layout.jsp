@@ -8,13 +8,13 @@
 <title>Projet</title>
 </head>
 <body>
-<table border="1" cellpadding="2" cellspacing="2" align="center">
+<table border="1" cellpadding="2" cellspacing="2" align="center" width="500px">
     <tr>
         <td height="20%" colspan="2"><tiles:insertAttribute name="header" />
         </td>
     </tr>
     <tr>
-        <td width="20%"><tiles:insertAttribute name="menu" /></td>
+        <td><tiles:insertAttribute name="menu" /></td>
         <td><tiles:insertAttribute name="body" /></td>
     </tr>
     <tr>

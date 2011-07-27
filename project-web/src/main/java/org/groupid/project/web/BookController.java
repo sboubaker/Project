@@ -47,9 +47,10 @@ public class BookController {
 	public String post(Model model, @Valid Book book, BindingResult result) {
 		if (result.hasErrors()) {
 			logger.info("Validation failed");
+			model.addAttribute("emptybook",new Book());
 			return BOOK_TILES;
 		}
 		bookService.save(book);
-		return "redirect:" + URL+".htm";
+		return "redirect:" ;
 	}
 }

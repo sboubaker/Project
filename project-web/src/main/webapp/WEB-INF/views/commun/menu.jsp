@@ -1,5 +1,3 @@
-<h2>Menu</h2>
-
-<a href="${pageContext.request.contextPath}/biblio/book.htm">Create new Book</a>
+<a href="${pageContext.request.contextPath}/app/biblio/book">Create new Book</a>
 <br>
-<a href="${pageContext.request.contextPath}/biblio/books.htm">List of Books</a>
+<a href="${pageContext.request.contextPath}/app/biblio/books">List of Books</a>

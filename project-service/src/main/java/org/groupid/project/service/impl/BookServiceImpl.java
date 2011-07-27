@@ -16,16 +16,6 @@ public class BookServiceImpl implements BookService {
 	private BookDao bookDao;
 	
 	@Transactional(readOnly=true)
-	public Book get(Long id) {
-		return bookDao.get(id);
-	}
-
-	@Transactional
-	public void delete(Book book) {
-		bookDao.delete(book);
-	}
-
-	@Transactional(readOnly=true)
 	public List<Book> findAll() {
 		return bookDao.findAll();
 	}
@@ -34,11 +24,4 @@ public class BookServiceImpl implements BookService {
 	public void save(Book book) {
 		bookDao.save(book);
 	}
-
-	@Transactional
-	public void saveAll(List<Book> books) {
-		for (Book book : books)
-			bookDao.save(book);
-	}
-	
 }

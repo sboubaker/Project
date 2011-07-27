@@ -20,5 +20,12 @@
         <put-attribute name="title" value="Book Manager" />
         <put-attribute name="body" value="/WEB-INF/views/books.jsp" />
     </definition>
+    
+    <definition name="login-tiles" extends="base.definition">
+        <put-attribute name="title" value="Login Page" />
+        <put-attribute name="header" value="Login" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
  
 </tiles-definitions>
